@@ -1,0 +1,28 @@
+.app {
+    @apply flex justify-center items-center flex-col w-full p-4;
+}
+.app form {
+    @apply flex justify-center items-center gap-8 w-full p-8 shadow-lg shadow-neutral-700 rounded-lg mb-2;
+    max-width: 600px;
+}
+.app form input {
+    @apply border-b-2 border-white outline-none p-2 focus:border-pink-500 w-full transition-all delay-300 ease-linear
+}
+.app form button {
+    @apply border-2 border-white hover:border-pink-500 transition-all delay-300 ease-linear hover:bg-pink-500  rounded-lg p-2;
+}
+
+/* tasks */
+.app_tasks {
+    @apply flex flex-col w-full;
+    max-width: 600px;
+}
+.app_task {
+    @apply flex justify-between items-center w-full mt-2 shadow-lg mb-2 rounded-lg p-2 bg-neutral-800 gap-4
+}
+.app_task_checkbox {
+    @apply bg-neutral-700 w-6 h-6 rounded-md appearance-none checked:bg-pink-500 transition-all delay-300 ease-linear;
+}
+.app_task_input {
+    @apply w-full max-w-full
+}
