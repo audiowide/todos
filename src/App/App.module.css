@@ -6,10 +6,10 @@
     max-width: 600px;
 }
 .app form input {
-    @apply border-b-2 border-white outline-none p-2 focus:border-pink-500 w-full transition-all delay-300 ease-linear
+    @apply border-b-2 border-white outline-none p-2 focus:border-rose-500 w-full transition-all delay-300 ease-linear;
 }
 .app form button {
-    @apply border-2 border-white hover:border-pink-500 transition-all delay-300 ease-linear hover:bg-pink-500  rounded-lg p-2;
+    @apply border-2 border-white hover:border-rose-500 transition-all delay-300 ease-linear hover:bg-rose-500  rounded-lg p-2;
 }
 
 /* tasks */
@@ -18,11 +18,32 @@
     max-width: 600px;
 }
 .app_task {
-    @apply flex justify-between items-center w-full mt-2 shadow-lg mb-2 rounded-lg p-2 bg-neutral-800 gap-4
+    @apply flex justify-between items-center w-full mt-2 shadow-lg p-2 bg-neutral-800 gap-4 transition-all delay-300 ease-linear;
+    border-radius: 10px 10px 0 10px;
 }
 .app_task_checkbox {
-    @apply bg-neutral-700 w-6 h-6 rounded-md appearance-none checked:bg-pink-500 transition-all delay-300 ease-linear;
+    @apply bg-neutral-700 w-6 h-6 rounded-md appearance-none checked:bg-rose-500 transition-all delay-300 ease-linear cursor-pointer;
 }
 .app_task_input {
-    @apply w-full max-w-full
+    @apply w-full max-w-full;
+}
+
+.app_under_tasks {
+    @apply w-full gap-4 flex justify-start items-end flex-col;
+}
+.app_under_tasks_all {
+    @apply w-full gap-2 flex justify-start items-end flex-col;
+    max-width: 90%;
+}
+.app_task__input {
+    @apply w-full bg-neutral-800 p-2 flex justify-between items-center  gap-2;
+    max-width: 90%;
+}
+.app_task__input input {
+    @apply w-full border-b-2 border-white outline-none p-2 focus:border-rose-500 transition-all delay-300 ease-linear;
+}
+
+/* not found */
+.notfound {
+    @apply flex justify-center items-center w-full m-5 text-rose-500;
 }

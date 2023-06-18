@@ -1,0 +1,3 @@
+.button {
+    @apply border-2 text-sm p-1 rounded-md font-bold hover:border-rose-500 hover:text-rose-500 transition-all ease-linear delay-300;
+}
